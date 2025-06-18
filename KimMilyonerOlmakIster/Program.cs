@@ -16,12 +16,12 @@
         Console.Write("Cevabınız (a/b): ");
         string answer1 = Console.ReadLine().ToLower(); // Büyük veya küçük harf hassasiyeti olmayacak ve büyük de küçük de yazılsa fark etmeyecek
 
-          if (answer1 == "b")
+          if (answer1 == "b") //Eğer cevap b şıkkına eşitse doğru kabul edilecek
         {
             Console.WriteLine("Doğru cevap. Tebrikler!");
             correctAnswers++;
         }
-          else
+          else // Fakat a şıkkını seçerse yanlış kabul edecek
         {
             Console.WriteLine("Yanlış cevap! Doğru cevap: b) İspanya");
         }
