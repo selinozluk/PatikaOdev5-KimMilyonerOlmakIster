@@ -70,7 +70,7 @@
         // Ödülü kazanıp kazanmadığını gösterecek
         Console.WriteLine("\nDoğru cevap sayınız: " + correctAnswers);
 
-        if (correctAnswers >= 2)
+        if (correctAnswers >= 2) //doğru sayısı eğer 2 veya 2'den fazlaysa yarışmayı kazanacak
         {
             Console.WriteLine("TEBRİKLER! Büyük ödülü kazandın!");
         }
