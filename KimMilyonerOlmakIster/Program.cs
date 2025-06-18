@@ -6,8 +6,8 @@
     {
           int correctAnswers = 0; // Doğru cevap sayısını tutmak için değişken
 
-        Console.WriteLine("Kim Milyoner Olmak İster?\n");
-        Console.WriteLine("3 sorudan en az 2'sini doğru cevaplarsan büyük ödülü kazanacaksın!");
+        Console.WriteLine("Kim Milyoner Olmak İster Yarışmasına Hoş Geldin:)\n");
+        Console.WriteLine("3 sorudan en az 2 tanesini doğru cevaplarsan büyük ödülü kazanacaksın!");
 
         // 1. Soru
         Console.WriteLine("1) 'Hola' kelimesi 'Merhaba' anlamına gelir. Bu kelime hangi dile aittir?");
@@ -16,12 +16,12 @@
         Console.Write("Cevabınız (a/b): ");
         string answer1 = Console.ReadLine().ToLower(); // Büyük veya küçük harf hassasiyeti olmayacak ve büyük de küçük de yazılsa fark etmeyecek
 
-        if (answer1 == "b")
+          if (answer1 == "b")
         {
             Console.WriteLine("Doğru cevap. Tebrikler!");
             correctAnswers++;
         }
-        else
+          else
         {
             Console.WriteLine("Yanlış cevap! Doğru cevap: b) İspanya");
         }
@@ -33,18 +33,18 @@
         Console.Write("Cevabınız (a/b): ");
         string answer2 = Console.ReadLine().ToLower();
 
-        if (answer2 == "a")
+          if (answer2 == "a")
         {
             Console.WriteLine("Doğru cevap. İyi ilerliyorsun!");
             correctAnswers++;
         }
-        else
+          else
         {
             Console.WriteLine("Yanlış cevap! Doğru cevap: a) 1923");
         }
 
         // Eğer ilk iki sorudan en az biri doğruysa 3. soruyu soracak, aksi takdirde son soruyu sormayacak
-        if (correctAnswers >= 1)
+           if (correctAnswers >= 1)
         {
             Console.WriteLine("\n3) Hangisi bir programlama dilidir?");
             Console.WriteLine("a) HTML");
@@ -62,10 +62,10 @@
                 Console.WriteLine("Yanlış cevap! Doğru cevap: b) Python");
             }
         }
-        else
-        {
+            else
+           {
             Console.WriteLine("\nİlk iki soruyu yanlış cevapladığın için yarışma sona erdi, yine de iyi ilerledin.");
-        }
+           }
 
         // Ödülü kazanıp kazanmadığını gösterecek
         Console.WriteLine("\nDoğru cevap sayınız: " + correctAnswers);
